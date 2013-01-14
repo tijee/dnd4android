@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="420dp" android:layout_height="wrap_content"
+	layout_weight="1" android:orientation="vertical">
+	<FrameLayout style="@style/DnDActionBar" android:id="@+id/new_character_action_bar"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:text="@string/new_character_title" />
+	</FrameLayout>
+	<LinearLayout style="@style/DnDContent"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TableLayout android:id="@+id/new_character_form"
+			android:layout_width="match_parent" android:layout_height="wrap_content">
+			<TableRow>
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:layout_marginRight="5dp" android:text="@string/new_character_name" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/new_character_name_edit_text"
+					android:layout_weight="1" android:layout_marginRight="5dp"
+					android:gravity="center" android:inputType="textPersonName" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:layout_marginRight="5dp" android:text="@string/new_character_level" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/new_character_level_edit_text"
+					android:layout_weight="1" android:gravity="center"
+					android:inputType="number" android:maxLength="2" />
+			</TableRow>
+			<TableRow>
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:layout_marginRight="5dp" android:text="@string/new_character_race" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/new_character_race_edit_text"
+					android:layout_weight="1" android:layout_marginRight="5dp"
+					android:gravity="center" android:inputType="textCapWords" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:layout_marginRight="5dp" android:text="@string/new_character_class" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/new_character_class_edit_text"
+					android:layout_weight="1" android:gravity="center"
+					android:inputType="textCapWords" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:orientation="horizontal">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:id="@+id/new_character_ok_button" android:layout_width="100sp"
+				android:layout_height="wrap_content" android:text="@string/global_ok"
+				android:enabled="false" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:id="@+id/new_character_cancel_button" android:layout_width="100sp"
+				android:layout_height="wrap_content" android:text="@string/global_cancel" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/global_menu_backup" android:id="@+id/global_menu_backup_item"
+		android:icon="@drawable/menu_backup" />
+	<item android:title="@string/global_menu_restore" android:id="@+id/global_menu_restore_item"
+		android:icon="@drawable/menu_restore" />
+</menu>

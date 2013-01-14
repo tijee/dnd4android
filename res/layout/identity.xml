@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<FrameLayout style="@style/DnDActionBar"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:text="@string/identity_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</FrameLayout>
+	<TableLayout style="@style/DnDContent"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:paddingLeft="15dp">
+		<TableRow>
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_name" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_name_edit_text" android:layout_weight="1"
+				android:gravity="center" android:inputType="textPersonName"
+				android:selectAllOnFocus="true" />
+		</TableRow>
+		<TableRow android:gravity="center_vertical">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_level" />
+			<LinearLayout android:layout_weight="1">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/identity_level_edit_text" android:layout_width="50sp"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:inputType="number" android:maxLength="2"
+					android:selectAllOnFocus="true" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+					android:text="@string/identity_xp" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:id="@+id/identity_xp_edit_text" android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:inputType="number" android:selectAllOnFocus="true"
+					android:digits="0123456789+" />
+			</LinearLayout>
+		</TableRow>
+		<TableRow>
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_race" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_race_edit_text" android:layout_weight="1"
+				android:gravity="center" android:inputType="textCapWords"
+				android:selectAllOnFocus="true" />
+		</TableRow>
+		<TableRow>
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_class" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_class_edit_text" android:layout_weight="1"
+				android:gravity="center" android:inputType="textCapWords"
+				android:selectAllOnFocus="true" />
+		</TableRow>
+		<TableRow>
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_paragon_path" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_paragon_path_edit_text"
+				android:layout_weight="1" android:gravity="center"
+				android:inputType="textCapWords" android:selectAllOnFocus="true" />
+		</TableRow>
+		<TableRow>
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_epic_destiny" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_epic_destiny_edit_text"
+				android:layout_weight="1" android:gravity="center"
+				android:inputType="textCapWords" android:selectAllOnFocus="true" />
+		</TableRow>
+		<TableRow android:layout_weight="1" android:gravity="center">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:layout_marginRight="5dp" android:text="@string/identity_misc" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:id="@+id/identity_misc_edit_text" android:layout_height="match_parent"
+				android:layout_weight="1" android:gravity="top" android:inputType="textMultiLine"
+				android:textSize="14sp" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

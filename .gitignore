@@ -1,0 +1,6 @@
+.classpath
+.project
+.settings/
+android.keystore
+bin/
+default.properties

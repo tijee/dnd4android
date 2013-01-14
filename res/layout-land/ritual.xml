@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="280dp" android:layout_width="420dp"
+	android:orientation="vertical">
+	<FrameLayout style="@style/DnDActionBar"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:ellipsize="middle"
+			android:gravity="center_vertical" android:id="@+id/ritual_title_text_view"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:singleLine="true" />
+	</FrameLayout>
+	<LinearLayout style="@style/DnDContent"
+		android:layout_height="match_parent" android:layout_width="match_parent"
+		android:orientation="vertical">
+		<TableLayout android:layout_height="0dp"
+			android:layout_weight="1" android:layout_width="match_parent">
+			<TableRow android:gravity="center">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:padding="5dp" android:text="@string/ritual_name" />
+				<LinearLayout android:layout_weight="1">
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_name_edit_text"
+						android:inputType="textPersonName" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:padding="5dp" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:padding="5dp" android:text="@string/ritual_skill" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_skill_edit_text"
+						android:inputType="text" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:padding="5dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:gravity="center">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:padding="5dp" android:text="@string/ritual_level" />
+				<LinearLayout android:layout_weight="1">
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_level_edit_text"
+						android:inputType="number" android:layout_weight="1"
+						android:layout_width="0dp" android:layout_height="wrap_content"
+						android:maxLength="2" android:padding="5dp" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:padding="5dp" android:text="@string/ritual_cost" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_cost_edit_text"
+						android:inputType="text" android:layout_weight="1"
+						android:layout_width="0dp" android:layout_height="wrap_content"
+						android:padding="5dp" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:padding="5dp" android:text="@string/ritual_time" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_time_edit_text"
+						android:inputType="text" android:layout_weight="1"
+						android:layout_width="0dp" android:layout_height="wrap_content"
+						android:padding="5dp" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:padding="5dp" android:text="@string/ritual_duration" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/ritual_duration_edit_text"
+						android:inputType="text" android:layout_weight="1"
+						android:layout_width="0dp" android:layout_height="wrap_content"
+						android:padding="5dp" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:gravity="center" android:layout_height="match_parent"
+				android:layout_weight="1">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:padding="5dp" android:text="@string/ritual_description" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:gravity="top" android:id="@+id/ritual_description_edit_text"
+					android:inputType="textMultiLine" android:layout_height="match_parent"
+					android:layout_weight="1" android:textSize="14sp" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_gravity="center"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:orientation="horizontal">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:enabled="false" android:id="@+id/ritual_ok_button"
+				android:layout_height="wrap_content" android:layout_width="100sp"
+				android:padding="5dp" android:text="@string/global_ok" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:id="@+id/ritual_cancel_button" android:layout_height="wrap_content"
+				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_cancel" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

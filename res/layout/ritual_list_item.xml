@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="match_parent"
+	android:paddingLeft="5dp" android:paddingRight="5dp">
+	<TableRow>
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:id="@+id/ritual_list_item_name_text_view"
+			android:layout_weight="1" android:singleLine="true" android:textSize="18sp"
+			android:ellipsize="marquee" />
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" android:text="@string/ritual_list_item_cost" />
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:id="@+id/ritual_list_item_cost_text_view"
+			android:layout_centerVertical="true" />
+	</TableRow>
+	<TableRow>
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:id="@+id/ritual_list_item_description_text_view"
+			android:layout_weight="1" android:singleLine="true"
+			android:ellipsize="marquee" />
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" android:text="@string/ritual_list_item_time" />
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			style="@style/DnDListViewItemTextView" android:id="@+id/ritual_list_item_time_text_view"
+			android:layout_centerVertical="true" />
+	</TableRow>
+</TableLayout>

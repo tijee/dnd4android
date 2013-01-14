@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent" android:layout_width="match_parent"
+	android:orientation="vertical">
+	<FrameLayout style="@style/DnDActionBar"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:text="@string/health_title"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" />
+	</FrameLayout>
+	<LinearLayout style="@style/DnDContent"
+		android:layout_height="0dp" android:layout_weight="1"
+		android:layout_width="match_parent" android:orientation="horizontal">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:paddingLeft="5dp">
+				<TableRow>
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_marginRight="5dp"
+						android:text="@string/health_hp_current" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/health_hp_current_edit_text"
+						android:inputType="numberSigned" android:layout_marginRight="10dp"
+						android:layout_width="50sp" android:maxLength="3"
+						android:selectAllOnFocus="true" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_height="match_parent"
+						android:layout_marginRight="5dp" android:text="@string/health_hp_max" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+						android:gravity="center" android:id="@+id/health_hp_max_button"
+						android:layout_width="50sp" android:layout_marginRight="5dp"
+						android:onClick="onClick" />
+				</TableRow>
+				<TableRow>
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_marginRight="5dp"
+						android:text="@string/health_hp_temp" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/health_hp_temp_edit_text"
+						android:inputType="number" android:layout_marginRight="10dp"
+						android:layout_width="50sp" android:maxLength="3"
+						android:selectAllOnFocus="true" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_height="match_parent"
+						android:layout_marginRight="5dp" android:text="@string/health_surge_value" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+						android:gravity="center" android:id="@+id/health_surge_value_button"
+						android:layout_width="50sp" android:layout_marginRight="5dp"
+						android:onClick="onClick" />
+				</TableRow>
+				<TableRow>
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_marginRight="5dp"
+						android:text="@string/health_surges_current" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+						android:gravity="center" android:id="@+id/health_surges_current_edit_text"
+						android:inputType="number" android:layout_marginRight="10dp"
+						android:layout_width="50sp" android:maxLength="2"
+						android:selectAllOnFocus="true" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+						android:gravity="center_vertical" android:layout_height="match_parent"
+						android:layout_marginRight="5dp" android:text="@string/health_surges_max" />
+					<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+						android:gravity="center" android:id="@+id/health_surges_max_button"
+						android:layout_width="50sp" android:layout_marginRight="5dp"
+						android:onClick="onClick" />
+				</TableRow>
+			</TableLayout>
+			<LinearLayout android:layout_height="0dp"
+				android:layout_width="match_parent" android:layout_weight="1"
+				android:gravity="center" android:orientation="horizontal"
+				android:paddingLeft="5dp">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:gravity="center_vertical" android:layout_height="match_parent"
+					android:layout_width="wrap_content" android:paddingRight="5dp"
+					android:text="@string/health_second_wind" />
+				<CheckBox android:id="@+id/health_second_wind_check_box"
+					android:layout_gravity="center" android:layout_height="match_parent"
+					android:layout_width="wrap_content" android:paddingLeft="5dp" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:gravity="center" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="@string/health_death_saving_short" />
+				<CheckBox android:id="@+id/health_death_saving_1_check_box"
+					android:layout_gravity="center" android:layout_height="match_parent"
+					android:layout_width="wrap_content" android:paddingLeft="5dp" />
+				<CheckBox android:id="@+id/health_death_saving_2_check_box"
+					android:layout_gravity="center" android:layout_height="match_parent"
+					android:layout_width="wrap_content" />
+				<CheckBox android:id="@+id/health_death_saving_3_check_box"
+					android:layout_gravity="center" android:layout_height="match_parent"
+					android:layout_width="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:text="@string/health_modifiers_short" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:gravity="center" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				android:gravity="top" android:id="@+id/health_modifiers_edit_text"
+				android:inputType="textMultiLine" android:layout_height="0dp"
+				android:layout_width="match_parent" android:layout_weight="1"
+				android:textSize="14sp" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				android:gravity="center" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/health_action_points" />
+			<LinearLayout android:gravity="center"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:paddingLeft="5dp">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:gravity="center" android:id="@+id/health_action_points_current_edit_text"
+					android:inputType="numberSigned" android:layout_height="wrap_content"
+					android:layout_marginRight="5dp" android:layout_width="50sp"
+					android:maxLength="3" android:selectAllOnFocus="true" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:gravity="center" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_marginRight="5dp"
+					android:text="@string/global_slash" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:gravity="center" android:id="@+id/health_action_points_max_edit_text"
+					android:inputType="numberSigned" android:layout_height="wrap_content"
+					android:layout_width="50sp" android:maxLength="3"
+					android:selectAllOnFocus="true" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

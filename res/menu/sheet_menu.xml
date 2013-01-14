@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/sheet_menu_damage" android:id="@+id/sheet_menu_damage_item"
+		android:icon="@drawable/menu_damage" />
+	<item android:title="@string/sheet_menu_surge" android:id="@+id/sheet_menu_surge_item"
+		android:icon="@drawable/menu_surge" />
+	<item android:title="@string/sheet_menu_short_rest" android:id="@+id/sheet_menu_short_rest"
+		android:icon="@drawable/menu_short_rest" />
+	<item android:title="@string/sheet_menu_extended_rest" android:id="@+id/sheet_menu_extended_rest_item"
+		android:icon="@drawable/menu_extended_rest" />
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="280dp" android:layout_width="420dp"
+	android:orientation="vertical">
+	<LinearLayout style="@style/DnDActionBar"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:ellipsize="middle"
+			android:gravity="center_vertical" android:id="@+id/equipment_item_title_text_view"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:singleLine="true" />
+	</LinearLayout>
+	<LinearLayout style="@style/DnDContent"
+		android:layout_height="match_parent" android:layout_width="match_parent"
+		android:orientation="vertical">
+		<TableLayout android:layout_height="0dp"
+			android:layout_weight="1" android:layout_width="match_parent">
+			<TableRow android:gravity="center">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:padding="5dp" android:text="@string/equipment_item_name" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:gravity="center" android:id="@+id/equipment_item_name_edit_text"
+					android:inputType="textPersonName" android:layout_weight="1"
+					android:padding="5dp" />
+			</TableRow>
+			<TableRow android:gravity="center" android:layout_height="match_parent"
+				android:layout_weight="1">
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					android:padding="5dp" android:text="@string/equipment_item_description" />
+				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					android:gravity="top" android:id="@+id/equipment_item_description_edit_text"
+					android:inputType="textMultiLine" android:layout_height="match_parent"
+					android:layout_weight="1" android:textSize="14sp" />
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:layout_gravity="center"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:orientation="horizontal">
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:enabled="false" android:id="@+id/equipment_item_ok_button"
+				android:layout_height="wrap_content" android:layout_width="100sp"
+				android:padding="5dp" android:text="@string/global_ok" />
+			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+				android:id="@+id/equipment_item_cancel_button"
+				android:layout_height="wrap_content" android:layout_width="100sp"
+				android:padding="5dp" android:text="@string/global_cancel" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent" android:layout_width="match_parent"
+	android:orientation="vertical">
+	<LinearLayout style="@style/DnDActionBar"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:text="@string/attacks_title"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="0dp" />
+		<ProgressBar style="@style/DnDProgressBar" android:id="@+id/attacks_progress_bar"
+			android:layout_gravity="center" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp"
+			android:layout_marginLeft="5dp" android:visibility="invisible" />
+		<ImageButton style="@style/DnDImageButton" android:id="@+id/attacks_new_attack_button"
+			android:layout_gravity="center" android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp" android:layout_width="wrap_content"
+			android:onClick="onClick" android:src="@drawable/action_add" />
+	</LinearLayout>
+	<LinearLayout style="@style/DnDContent"
+		android:layout_height="0dp" android:layout_weight="1"
+		android:layout_width="match_parent" android:orientation="vertical">
+		<ListView style="@style/DnDListView" android:id="@id/android:list"
+			android:layout_height="match_parent" android:layout_width="match_parent" />
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			android:gravity="center" android:id="@id/android:empty"
+			android:layout_height="match_parent" android:layout_width="match_parent"
+			android:text="@string/attacks_loading" />
+	</LinearLayout>
+</LinearLayout>

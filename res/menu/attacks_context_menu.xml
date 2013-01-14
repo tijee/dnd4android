@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/attacks_context_menu_open_item"
+		android:title="@string/attacks_context_menu_open" />
+	<item android:id="@+id/attacks_context_menu_delete_item"
+		android:title="@string/attacks_context_menu_delete" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="dnd_background">#fff8eede</color>
+	<color name="dnd_gray">#ff404241</color>
+	<color name="dnd_gray_disabled">#88404241</color>
+	<color name="dnd_green">#ff5A8F62</color>
+	<color name="dnd_green_disabled">#885A8F62</color>
+	<color name="dnd_red">#ff811C32</color>
+	<color name="dnd_red_disabled">#88811C32</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<FrameLayout style="@style/DnDActionBar"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+			style="@style/DnDActionBarTextView" android:text="@string/notes_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_vertical" />
+	</FrameLayout>
+	<FrameLayout style="@style/DnDContent"
+		android:layout_width="match_parent" android:layout_height="match_parent">
+		<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			android:id="@+id/notes_edit_text" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:gravity="top"
+			android:inputType="textMultiLine" android:textSize="14sp" />
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_height="match_parent"
+	android:layout_width="match_parent">
+	<LinearLayout android:layout_height="match_parent"
+		android:layout_width="match_parent" android:orientation="vertical">
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_height="0dp" android:layout_weight="1"
+			android:layout_width="match_parent" />
+		<Gallery android:id="@+id/sheet_tabs_gallery"
+			android:layout_height="wrap_content" android:layout_width="match_parent"
+			android:padding="5dp" android:spacing="30dp" />
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_height="0dp" android:layout_width="match_parent"
+			android:visibility="gone" />
+	</LinearLayout>
+</TabHost>
