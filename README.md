@@ -1,4 +1,4 @@
-dnd4android
-===========
+D&D 4 Android
+============
 
-D&amp;D 4 Android is a character sheet for D&amp;D 4th Edition
+See [https://play.google.com/store/apps/details?id=com.thomasgallinari.dndcharactersheet](https://play.google.com/store/apps/details?id=com.thomasgallinari.dndcharactersheet)
