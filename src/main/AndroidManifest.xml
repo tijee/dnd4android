@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thomasgallinari.dndcharactersheet"
-    android:versionCode="10"
-    android:versionName="1.5.0"
+    package="com.thomasgallinari.dnd4android"
+    android:versionCode="13"
+    android:versionName="1.5.3"
     android:installLocation="auto">
 
     <uses-sdk

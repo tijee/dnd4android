@@ -3,11 +3,11 @@
 	android:orientation="vertical" android:layout_width="match_parent"
 	android:layout_height="wrap_content" android:paddingLeft="5dp"
 	android:paddingRight="5dp">
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/feat_list_item_name_text_view"
 		android:layout_height="wrap_content" android:layout_width="match_parent"
 		android:textSize="18sp" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:ellipsize="marquee"
 		android:id="@+id/feat_list_item_description_text_view"
 		android:layout_height="wrap_content" android:layout_width="match_parent"

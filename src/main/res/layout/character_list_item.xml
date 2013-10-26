@@ -2,28 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="wrap_content" android:layout_width="match_parent"
 	android:paddingLeft="5dp" android:paddingRight="5dp">
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/character_list_item_name_text_view"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:singleLine="true" android:textSize="20sp" android:ellipsize="marquee" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/character_list_item_race_text_view"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:layout_below="@id/character_list_item_name_text_view"
 		android:layout_marginRight="5dp" android:textSize="14sp" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/character_list_item_class_text_view"
 		android:layout_width="wrap_content" android:layout_height="wrap_content"
 		android:layout_toRightOf="@+id/character_list_item_race_text_view"
 		android:layout_alignBaseline="@+id/character_list_item_race_text_view"
 		android:textSize="14sp" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:layout_toLeftOf="@+id/character_list_item_level_text_view"
 		android:layout_centerVertical="true" android:layout_marginLeft="5dp"
 		android:layout_marginRight="5dp" android:text="@string/character_list_item_level"
 		android:textSize="16sp" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/character_list_item_level_text_view"
 		android:layout_width="20dp" android:layout_height="wrap_content"
 		android:layout_alignParentRight="true" android:layout_centerVertical="true"

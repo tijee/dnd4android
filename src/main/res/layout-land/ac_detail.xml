@@ -4,7 +4,7 @@
 	android:layout_height="wrap_content" android:orientation="vertical">
 	<FrameLayout style="@style/DnDActionBar"
 		android:layout_width="match_parent" android:layout_height="wrap_content">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:id="@+id/ac_detail_title_text_view"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:gravity="center_vertical" />
@@ -15,74 +15,74 @@
 		<TableLayout android:layout_gravity="center_horizontal"
 			android:layout_width="wrap_content" android:layout_height="wrap_content">
 			<TableRow>
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_base"
 					android:layout_column="0" android:layout_width="50sp" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_armor"
 					android:layout_column="2" android:layout_width="50sp" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_class"
 					android:layout_column="4" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_feat"
 					android:layout_column="6" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_enh"
 					android:layout_column="8" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:text="@string/ac_detail_misc"
 					android:layout_column="10" />
 			</TableRow>
 			<TableRow>
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:id="@+id/ac_detail_base_text_view" android:layout_height="40sp"
 					android:gravity="center" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_plus" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/ac_detail_armor_edit_text" android:layout_width="50sp"
 					android:gravity="center" android:inputType="numberSigned"
 					android:maxLength="3" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_plus" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/ac_detail_class_edit_text" android:layout_width="50sp"
 					android:gravity="center" android:inputType="numberSigned"
 					android:maxLength="3" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_plus" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/ac_detail_feat_edit_text" android:gravity="center"
 					android:inputType="numberSigned" android:layout_width="50sp"
 					android:maxLength="3" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_plus" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/ac_detail_enh_edit_text" android:gravity="center"
 					android:inputType="numberSigned" android:layout_width="50sp"
 					android:maxLength="3" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_plus" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/ac_detail_misc_edit_text" android:gravity="center"
 					android:inputType="numberSigned" android:layout_width="50sp"
 					android:maxLength="3" android:selectAllOnFocus="true" />
 			</TableRow>
 			<TableRow>
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:id="@+id/ac_detail_total_text_view" android:gravity="center"
 					android:layout_column="4" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:gravity="center" android:layout_marginLeft="10sp"
 					android:layout_marginRight="10sp" android:text="@string/global_equals"
 					android:layout_column="5" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:id="@+id/ac_detail_total_score_text_view" android:gravity="center"
 					android:layout_height="40sp" android:layout_column="6" />
 			</TableRow>
@@ -90,10 +90,10 @@
 		<LinearLayout android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:layout_gravity="center"
 			android:orientation="horizontal">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/ac_detail_ok_button" android:layout_width="100sp"
 				android:layout_height="wrap_content" android:text="@string/global_ok" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/ac_detail_cancel_button" android:layout_width="100sp"
 				android:layout_height="wrap_content" android:text="@string/global_cancel" />
 		</LinearLayout>

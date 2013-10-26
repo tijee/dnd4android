@@ -4,7 +4,7 @@
 	android:orientation="vertical">
 	<FrameLayout style="@style/DnDActionBar"
 		android:layout_width="match_parent" android:layout_height="wrap_content">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:text="@string/scores_title"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:gravity="center_vertical" />
@@ -13,115 +13,115 @@
 		android:layout_width="match_parent" android:layout_height="match_parent"
 		android:gravity="center">
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability" android:gravity="center"
 				android:padding="5dp" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_score" android:gravity="center"
 				android:padding="5dp" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_modifier" android:gravity="center"
 				android:padding="5dp" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense" android:gravity="center"
 				android:padding="5dp" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense_score" android:gravity="center"
 				android:padding="5dp" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_str" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_str_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_str_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense_ac" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_ac_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_con" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_con_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_con_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense_fort" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_fort_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_dex" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_dex_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_dex_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense_ref" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_ref_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_int" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_int_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_int_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_defense_will" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_will_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_wis" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_wis_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_wis_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_initiative" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_init_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>
 		<TableRow android:gravity="center">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_ability_cha" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+			<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 				android:id="@+id/scores_cha_edit_text" android:layout_width="40sp"
 				android:gravity="center" android:inputType="number"
 				android:maxLength="2" android:selectAllOnFocus="true" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:id="@+id/scores_cha_text_view" android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+			<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 				android:text="@string/scores_movement" android:layout_height="match_parent"
 				android:gravity="center" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/scores_mov_button" android:gravity="center"
 				android:onClick="onClick" />
 		</TableRow>

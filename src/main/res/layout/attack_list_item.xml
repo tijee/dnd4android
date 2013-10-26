@@ -3,7 +3,7 @@
 	android:orientation="horizontal" android:layout_width="match_parent"
 	android:layout_height="wrap_content" android:paddingLeft="5dp"
 	android:paddingRight="5dp">
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@style/DnDListViewItemTextView" android:id="@+id/attack_list_item_name_text_view"
 		android:layout_gravity="center_vertical" android:layout_height="wrap_content"
 		android:layout_width="0dp" android:layout_weight="1" android:textSize="18sp"
@@ -13,10 +13,10 @@
 		android:gravity="center" android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:paddingLeft="5dp"
 		android:paddingRight="5dp">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 			style="@style/DnDListViewItemTextView" android:layout_height="wrap_content"
 			android:layout_width="wrap_content" android:text="@string/attack" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+		<com.thomasgallinari.dnd4android.view.widget.StyledButton
 			android:layout_height="wrap_content" android:layout_width="50sp"
 			android:gravity="center" android:id="@+id/attack_list_item_attack_button"
 			android:focusable="false" android:focusableInTouchMode="false" />
@@ -25,10 +25,10 @@
 		android:gravity="center" android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:paddingLeft="5dp"
 		android:paddingRight="5dp">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 			style="@style/DnDListViewItemTextView" android:layout_height="wrap_content"
 			android:layout_width="wrap_content" android:text="@string/attack_damage" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+		<com.thomasgallinari.dnd4android.view.widget.StyledButton
 			android:layout_height="wrap_content" android:layout_width="50sp"
 			android:gravity="center" android:id="@+id/attack_list_item_damage_button"
 			android:focusable="false" android:focusableInTouchMode="false" />

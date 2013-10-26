@@ -4,7 +4,7 @@
 	android:orientation="vertical">
 	<LinearLayout style="@style/DnDActionBar"
 		android:layout_height="wrap_content" android:layout_width="match_parent">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:text="@string/power_sort_title"
 			android:ellipsize="middle" android:layout_height="wrap_content"
 			android:layout_width="wrap_content" android:singleLine="true" />
@@ -16,7 +16,7 @@
 			android:layout_weight="1" android:layout_width="match_parent"
 			android:gravity="center">
 			<TableRow>
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:text="@string/power_sort_by_1" />
 			</TableRow>
 			<TableRow android:gravity="center">
@@ -26,7 +26,7 @@
 					android:layout_weight="1" android:padding="5dp" />
 			</TableRow>
 			<TableRow>
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:text="@string/power_sort_by_2" />
 			</TableRow>
 			<TableRow android:gravity="center">
@@ -39,10 +39,10 @@
 		<LinearLayout android:layout_gravity="center"
 			android:layout_height="wrap_content" android:layout_width="wrap_content"
 			android:orientation="horizontal">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/power_sort_ok_button" android:layout_height="wrap_content"
 				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_ok" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/power_sort_cancel_button" android:layout_height="wrap_content"
 				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_cancel" />
 		</LinearLayout>

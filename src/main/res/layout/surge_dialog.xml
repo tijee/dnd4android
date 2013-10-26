@@ -5,20 +5,20 @@
 	<RadioGroup android:id="@+id/surge_dialog_radio_group"
 		android:layout_width="match_parent" android:layout_height="wrap_content"
 		android:orientation="horizontal" android:gravity="center">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledRadioButton
+		<com.thomasgallinari.dnd4android.view.widget.StyledRadioButton
 			android:id="@+id/surge_dialog_surge_radio_button"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:text="@string/surges" android:checked="true" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledRadioButton
+		<com.thomasgallinari.dnd4android.view.widget.StyledRadioButton
 			android:id="@+id/surge_dialog_hp_radio_button"
 			android:layout_marginLeft="5dp" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/hp" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledRadioButton
+		<com.thomasgallinari.dnd4android.view.widget.StyledRadioButton
 			android:id="@+id/surge_dialog_hp_temp_radio_button"
 			android:layout_marginLeft="5dp" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/hp_temp" />
 	</RadioGroup>
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+	<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 		android:id="@+id/surge_dialog_edit_text" android:gravity="center"
 		android:inputType="number" android:layout_height="wrap_content"
 		android:layout_width="match_parent" android:layout_marginRight="5dp"

@@ -5,7 +5,7 @@
 	<LinearLayout style="@style/DnDActionBar"
 		android:layout_height="wrap_content" android:layout_width="match_parent"
 		android:orientation="horizontal">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:text="@string/attacks_title"
 			android:gravity="center_vertical" android:layout_height="wrap_content"
 			android:layout_weight="1" android:layout_width="0dp" />
@@ -23,7 +23,7 @@
 		android:layout_width="match_parent" android:orientation="vertical">
 		<ListView style="@style/DnDListView" android:id="@id/android:list"
 			android:layout_height="match_parent" android:layout_width="match_parent" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 			android:gravity="center" android:id="@id/android:empty"
 			android:layout_height="match_parent" android:layout_width="match_parent"
 			android:text="@string/attacks_loading" />

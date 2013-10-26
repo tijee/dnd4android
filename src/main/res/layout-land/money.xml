@@ -4,7 +4,7 @@
 	android:orientation="vertical">
 	<LinearLayout style="@style/DnDActionBar"
 		android:layout_height="wrap_content" android:layout_width="match_parent">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:text="@string/money_title"
 			android:ellipsize="middle" android:layout_height="wrap_content"
 			android:layout_width="wrap_content" android:singleLine="true" />
@@ -15,53 +15,53 @@
 		<TableLayout android:layout_height="0dp"
 			android:layout_weight="1" android:layout_width="match_parent">
 			<TableRow android:gravity="center">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/money_copper_pieces" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="center" android:id="@+id/money_copper_pieces_edit_text"
 					android:inputType="number" android:layout_weight="1"
 					android:padding="5dp" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/money_platinum_pieces" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="center" android:id="@+id/money_platinum_pieces_edit_text"
 					android:inputType="number" android:layout_weight="1"
 					android:padding="5dp" android:selectAllOnFocus="true" />
 			</TableRow>
 			<TableRow android:gravity="center">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/money_silver_pieces" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="center" android:id="@+id/money_silver_pieces_edit_text"
 					android:inputType="number" android:layout_weight="1"
 					android:padding="5dp" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/money_astral_diamonds" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="center" android:id="@+id/money_astral_diamonds_edit_text"
 					android:inputType="number" android:layout_weight="1"
 					android:padding="5dp" android:selectAllOnFocus="true" />
 			</TableRow>
 			<TableRow android:gravity="center">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/money_gold_pieces" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="center" android:id="@+id/money_gold_pieces_edit_text"
 					android:inputType="number" android:layout_weight="1"
 					android:padding="5dp" android:selectAllOnFocus="true" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:layout_weight="1" android:padding="5dp" android:visibility="invisible" />
 			</TableRow>
 		</TableLayout>
 		<LinearLayout android:layout_gravity="center"
 			android:layout_height="wrap_content" android:layout_width="wrap_content"
 			android:orientation="horizontal">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/money_ok_button" android:layout_height="wrap_content"
 				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_ok" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/money_cancel_button" android:layout_height="wrap_content"
 				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_cancel" />
 		</LinearLayout>

@@ -7,11 +7,11 @@
 		android:layout_marginRight="5dp" />
 	<LinearLayout android:layout_width="match_parent"
 		android:layout_height="wrap_content" android:orientation="vertical">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 			style="@style/DnDListViewItemTextView" android:id="@+id/power_list_item_name_text_view"
 			android:layout_width="match_parent" android:layout_height="wrap_content"
 			android:textSize="18sp" />
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 			style="@style/DnDListViewItemTextView" android:id="@+id/power_list_item_description_text_view"
 			android:layout_width="match_parent" android:layout_height="wrap_content"
 			android:singleLine="true" android:ellipsize="marquee" />

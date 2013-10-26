@@ -4,7 +4,7 @@
 	android:orientation="vertical">
 	<FrameLayout style="@style/DnDActionBar"
 		android:layout_height="wrap_content" android:layout_width="match_parent">
-		<com.thomasgallinari.dndcharactersheet.view.widget.StyledTitleTextView
+		<com.thomasgallinari.dnd4android.view.widget.StyledTitleTextView
 			style="@style/DnDActionBarTextView" android:ellipsize="middle"
 			android:gravity="center_vertical" android:id="@+id/power_title_text_view"
 			android:layout_height="wrap_content" android:layout_width="wrap_content"
@@ -16,16 +16,16 @@
 		<TableLayout android:layout_height="0dp"
 			android:layout_weight="1" android:layout_width="match_parent">
 			<TableRow android:gravity="center">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/power_name" />
 				<LinearLayout android:gravity="center"
 					android:layout_weight="1">
-					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 						android:gravity="center" android:id="@+id/power_name_edit_text"
 						android:inputType="textPersonName" android:layout_width="0dp"
 						android:layout_height="wrap_content" android:layout_weight="1"
 						android:padding="5dp" />
-					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 						android:id="@+id/power_used_text_view" android:layout_width="wrap_content"
 						android:layout_height="wrap_content" android:padding="5dp"
 						android:text="@string/power_used" android:visibility="gone" />
@@ -36,17 +36,17 @@
 				</LinearLayout>
 			</TableRow>
 			<TableRow android:gravity="center">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/power_type" />
 				<LinearLayout android:gravity="center"
 					android:layout_weight="1">
 					<Spinner android:gravity="center" android:id="@+id/power_type_spinner"
 						android:layout_width="0dp" android:layout_height="wrap_content"
 						android:layout_weight="1" android:padding="5dp" />
-					<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+					<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 						android:layout_width="wrap_content" android:layout_height="wrap_content"
 						android:padding="5dp" android:text="@string/power_level" />
-					<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+					<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 						android:gravity="center" android:id="@+id/power_level_edit_text"
 						android:inputType="number" android:layout_width="40sp"
 						android:layout_height="wrap_content" android:maxLength="2"
@@ -55,9 +55,9 @@
 			</TableRow>
 			<TableRow android:gravity="center" android:layout_height="match_parent"
 				android:layout_weight="1">
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+				<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 					android:padding="5dp" android:text="@string/power_description" />
-				<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:gravity="top" android:id="@+id/power_description_edit_text"
 					android:inputType="textMultiLine" android:layout_height="match_parent"
 					android:layout_weight="1" android:textSize="14sp" />
@@ -66,11 +66,11 @@
 		<LinearLayout android:layout_gravity="center"
 			android:layout_height="wrap_content" android:layout_width="wrap_content"
 			android:orientation="horizontal">
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:enabled="false" android:id="@+id/power_ok_button"
 				android:layout_height="wrap_content" android:layout_width="100sp"
 				android:padding="5dp" android:text="@string/global_ok" />
-			<com.thomasgallinari.dndcharactersheet.view.widget.StyledButton
+			<com.thomasgallinari.dnd4android.view.widget.StyledButton
 				android:id="@+id/power_cancel_button" android:layout_height="wrap_content"
 				android:layout_width="100sp" android:padding="5dp" android:text="@string/global_cancel" />
 		</LinearLayout>

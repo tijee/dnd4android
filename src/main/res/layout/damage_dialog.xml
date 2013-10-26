@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="match_parent" android:layout_width="match_parent"
 	android:orientation="horizontal">
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledTextView
+	<com.thomasgallinari.dnd4android.view.widget.StyledTextView
 		style="@android:style/TextAppearance.Theme.Dialog"
 		android:layout_height="wrap_content" android:layout_marginLeft="5dp"
 		android:layout_marginRight="5dp" android:layout_width="wrap_content"
 		android:text="@string/damage" />
-	<com.thomasgallinari.dndcharactersheet.view.widget.StyledEditText
+	<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 		android:id="@+id/damage_dialog_edit_text" android:gravity="center"
 		android:inputType="number" android:layout_height="wrap_content"
 		android:layout_marginRight="5dp" android:layout_weight="1"
