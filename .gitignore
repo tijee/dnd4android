@@ -1,6 +1,6 @@
-.classpath
-.project
-.settings/
+.gradle/
+.idea/
 android.keystore
-bin/
-default.properties
+build/
+dnd4android.iml
+gradle/
