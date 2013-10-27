@@ -6,12 +6,14 @@ package com.thomasgallinari.dnd4android.model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 /**
  * A skill of a character.
  */
 @DatabaseTable(tableName = "skill")
-public class Skill {
-    
+public class Skill implements Serializable {
+
     private static final String ACROBATICS = "skill_acrobatics";
     private static final String ARCANA = "skill_arcana";
     private static final String ATHLETICS = "skill_athletics";
@@ -31,15 +33,15 @@ public class Skill {
     private static final String THIEVERY = "skill_thievery";
 
     public static final String[][] DEFAULT_SKILLS = {
-	    { ACROBATICS, Ability.DEX }, { ARCANA, Ability.INT },
-	    { ATHLETICS, Ability.STR }, { BLUFF, Ability.CHA },
-	    { DIPLOMACY, Ability.CHA }, { DUNGEONEERING, Ability.WIS },
-	    { ENDURANCE, Ability.CON }, { HEAL, Ability.WIS },
-	    { HISTORY, Ability.INT }, { INSIGHT, Ability.WIS },
-	    { INTIMIDATE, Ability.CHA }, { NATURE, Ability.WIS },
-	    { PERCEPTION, Ability.WIS }, { RELIGION, Ability.INT },
-	    { STEALTH, Ability.DEX }, { STREETWISE, Ability.CHA },
-	    { THIEVERY, Ability.DEX } };
+            {ACROBATICS, Ability.DEX}, {ARCANA, Ability.INT},
+            {ATHLETICS, Ability.STR}, {BLUFF, Ability.CHA},
+            {DIPLOMACY, Ability.CHA}, {DUNGEONEERING, Ability.WIS},
+            {ENDURANCE, Ability.CON}, {HEAL, Ability.WIS},
+            {HISTORY, Ability.INT}, {INSIGHT, Ability.WIS},
+            {INTIMIDATE, Ability.CHA}, {NATURE, Ability.WIS},
+            {PERCEPTION, Ability.WIS}, {RELIGION, Ability.INT},
+            {STEALTH, Ability.DEX}, {STREETWISE, Ability.CHA},
+            {THIEVERY, Ability.DEX}};
 
     @DatabaseField(columnName = "ability", canBeNull = false)
     private String mAbility;
@@ -67,126 +69,119 @@ public class Skill {
      * @return the ability
      */
     public String getAbility() {
-	return mAbility;
+        return mAbility;
     }
 
     /**
      * @return the armor
      */
     public int getArmor() {
-	return mArmor;
+        return mArmor;
     }
 
     /**
      * @return the character
      */
     public Character getCharacter() {
-	return mCharacter;
+        return mCharacter;
     }
 
     /**
      * @return the id
      */
     public int getId() {
-	return mId;
+        return mId;
     }
 
     /**
      * @return the misc
      */
     public int getMisc() {
-	return mMisc;
+        return mMisc;
     }
 
     /**
      * @return the name
      */
     public String getName() {
-	return mName;
+        return mName;
     }
 
     /**
      * @return the skill score
      */
     public int getScore() {
-	int abilMod = 0;
-	if (mAbility.equals(Ability.CHA)) {
-	    abilMod = mCharacter.getChaMod();
-	} else if (mAbility.equals(Ability.CON)) {
-	    abilMod = mCharacter.getConMod();
-	} else if (mAbility.equals(Ability.DEX)) {
-	    abilMod = mCharacter.getDexMod();
-	} else if (mAbility.equals(Ability.INT)) {
-	    abilMod = mCharacter.getIntelMod();
-	} else if (mAbility.equals(Ability.STR)) {
-	    abilMod = mCharacter.getStrMod();
-	} else if (mAbility.equals(Ability.WIS)) {
-	    abilMod = mCharacter.getWisMod();
-	}
-	return abilMod + mCharacter.getLevel() / 2 + mArmor + mMisc
-		+ (mTrained ? 5 : 0);
+        int abilMod = 0;
+        if (mAbility.equals(Ability.CHA)) {
+            abilMod = mCharacter.getChaMod();
+        } else if (mAbility.equals(Ability.CON)) {
+            abilMod = mCharacter.getConMod();
+        } else if (mAbility.equals(Ability.DEX)) {
+            abilMod = mCharacter.getDexMod();
+        } else if (mAbility.equals(Ability.INT)) {
+            abilMod = mCharacter.getIntelMod();
+        } else if (mAbility.equals(Ability.STR)) {
+            abilMod = mCharacter.getStrMod();
+        } else if (mAbility.equals(Ability.WIS)) {
+            abilMod = mCharacter.getWisMod();
+        }
+        return abilMod + mCharacter.getLevel() / 2 + mArmor + mMisc
+                + (mTrained ? 5 : 0);
     }
 
     /**
      * @return the trained
      */
     public boolean isTrained() {
-	return mTrained;
+        return mTrained;
     }
 
     /**
-     * @param ability
-     *            the ability to set
+     * @param ability the ability to set
      */
     public void setAbility(String ability) {
-	this.mAbility = ability;
+        this.mAbility = ability;
     }
 
     /**
-     * @param armor
-     *            the armor to set
+     * @param armor the armor to set
      */
     public void setArmor(int armor) {
-	this.mArmor = armor;
+        this.mArmor = armor;
     }
 
     /**
-     * @param character
-     *            the character to set
+     * @param character the character to set
      */
     public void setCharacter(Character character) {
-	this.mCharacter = character;
+        this.mCharacter = character;
     }
 
     /**
-     * @param id
-     *            the id to set
+     * @param id the id to set
      */
     public void setId(int id) {
-	this.mId = id;
+        this.mId = id;
     }
 
     /**
-     * @param misc
-     *            the misc to set
+     * @param misc the misc to set
      */
     public void setMisc(int misc) {
-	this.mMisc = misc;
+        this.mMisc = misc;
     }
 
     /**
-     * @param name
-     *            the name to set
+     * @param name the name to set
      */
     public void setName(String name) {
-	this.mName = name;
+        this.mName = name;
     }
 
     /**
-     * @param trained
-     *            the trained to set
+     * @param trained the trained to set
      */
     public void setTrained(boolean trained) {
-	this.mTrained = trained;
+        this.mTrained = trained;
     }
 }

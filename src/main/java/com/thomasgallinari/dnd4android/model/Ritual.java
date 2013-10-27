@@ -6,11 +6,13 @@ package com.thomasgallinari.dnd4android.model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 /**
  * A ritual of a character.
  */
 @DatabaseTable(tableName = "ritual")
-public class Ritual implements Comparable<Ritual> {
+public class Ritual implements Serializable, Comparable<Ritual> {
 
     @DatabaseField(columnName = "character_id", canBeNull = false, foreign = true)
     private Character mCharacter;
@@ -43,145 +45,136 @@ public class Ritual implements Comparable<Ritual> {
      */
     @Override
     public int compareTo(Ritual another) {
-	int result = Integer.valueOf(mLevel).compareTo(another.mLevel);
-	if (result == 0) {
-	    result = mName.compareTo(another.mName);
-	}
-	return result;
+        int result = Integer.valueOf(mLevel).compareTo(another.mLevel);
+        if (result == 0) {
+            result = mName.compareTo(another.mName);
+        }
+        return result;
     }
 
     /**
      * @return the character
      */
     public Character getCharacter() {
-	return mCharacter;
+        return mCharacter;
     }
 
     /**
      * @return the cost
      */
     public String getCost() {
-	return mCost;
+        return mCost;
     }
 
     /**
      * @return the description
      */
     public String getDescription() {
-	return mDescription;
+        return mDescription;
     }
 
     /**
      * @return the duration
      */
     public String getDuration() {
-	return mDuration;
+        return mDuration;
     }
 
     /**
      * @return the id
      */
     public int getId() {
-	return mId;
+        return mId;
     }
 
     /**
      * @return the level
      */
     public int getLevel() {
-	return mLevel;
+        return mLevel;
     }
 
     /**
      * @return the name
      */
     public String getName() {
-	return mName;
+        return mName;
     }
 
     /**
      * @return the skill
      */
     public String getSkill() {
-	return mSkill;
+        return mSkill;
     }
 
     /**
      * @return the time
      */
     public String getTime() {
-	return mTime;
+        return mTime;
     }
 
     /**
-     * @param character
-     *            the character to set
+     * @param character the character to set
      */
     public void setCharacter(Character character) {
-	mCharacter = character;
+        mCharacter = character;
     }
 
     /**
-     * @param cost
-     *            the cost to set
+     * @param cost the cost to set
      */
     public void setCost(String cost) {
-	mCost = cost;
+        mCost = cost;
     }
 
     /**
-     * @param description
-     *            the description to set
+     * @param description the description to set
      */
     public void setDescription(String description) {
-	mDescription = description;
+        mDescription = description;
     }
 
     /**
-     * @param duration
-     *            the duration to set
+     * @param duration the duration to set
      */
     public void setDuration(String duration) {
-	mDuration = duration;
+        mDuration = duration;
     }
 
     /**
-     * @param id
-     *            the id to set
+     * @param id the id to set
      */
     public void setId(int id) {
-	mId = id;
+        mId = id;
     }
 
     /**
-     * @param level
-     *            the level to set
+     * @param level the level to set
      */
     public void setLevel(int level) {
-	mLevel = level;
+        mLevel = level;
     }
 
     /**
-     * @param name
-     *            the name to set
+     * @param name the name to set
      */
     public void setName(String name) {
-	mName = name;
+        mName = name;
     }
 
     /**
-     * @param skill
-     *            the skill to set
+     * @param skill the skill to set
      */
     public void setSkill(String skill) {
-	mSkill = skill;
+        mSkill = skill;
     }
 
     /**
-     * @param time
-     *            the time to set
+     * @param time the time to set
      */
     public void setTime(String time) {
-	mTime = time;
+        mTime = time;
     }
 }

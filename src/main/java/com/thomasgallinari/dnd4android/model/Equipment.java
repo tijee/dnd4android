@@ -6,11 +6,13 @@ package com.thomasgallinari.dnd4android.model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 /**
  * An equipment item of a character.
  */
 @DatabaseTable(tableName = "equipment")
-public class Equipment implements Comparable<Equipment> {
+public class Equipment implements Serializable, Comparable<Equipment> {
 
     @DatabaseField(columnName = "character_id", canBeNull = false, foreign = true)
     private Character mCharacter;
@@ -33,66 +35,62 @@ public class Equipment implements Comparable<Equipment> {
      */
     @Override
     public int compareTo(Equipment another) {
-	return mName.compareTo(another.mName);
+        return mName.compareTo(another.mName);
     }
 
     /**
      * @return the character
      */
     public Character getCharacter() {
-	return mCharacter;
+        return mCharacter;
     }
 
     /**
      * @return the description
      */
     public String getDescription() {
-	return mDescription;
+        return mDescription;
     }
 
     /**
      * @return the id
      */
     public int getId() {
-	return mId;
+        return mId;
     }
 
     /**
      * @return the name
      */
     public String getName() {
-	return mName;
+        return mName;
     }
 
     /**
-     * @param character
-     *            the character to set
+     * @param character the character to set
      */
     public void setCharacter(Character character) {
-	this.mCharacter = character;
+        this.mCharacter = character;
     }
 
     /**
-     * @param description
-     *            the description to set
+     * @param description the description to set
      */
     public void setDescription(String description) {
-	this.mDescription = description;
+        this.mDescription = description;
     }
 
     /**
-     * @param id
-     *            the id to set
+     * @param id the id to set
      */
     public void setId(int id) {
-	this.mId = id;
+        this.mId = id;
     }
 
     /**
-     * @param name
-     *            the name to set
+     * @param name the name to set
      */
     public void setName(String name) {
-	this.mName = name;
+        this.mName = name;
     }
 }
