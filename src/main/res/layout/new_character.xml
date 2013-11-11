@@ -19,7 +19,7 @@
 				<com.thomasgallinari.dnd4android.view.widget.StyledEditText
 					android:id="@+id/new_character_name_edit_text"
 					android:layout_weight="1" android:gravity="center"
-					android:inputType="textPersonName" />
+					android:inputType="textCapWords" />
 			</TableRow>
 			<TableRow>
 				<com.thomasgallinari.dnd4android.view.widget.StyledTextView

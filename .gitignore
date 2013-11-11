@@ -1,3 +1,4 @@
+*.apk
 .gradle/
 .DS_Store
 .idea/
